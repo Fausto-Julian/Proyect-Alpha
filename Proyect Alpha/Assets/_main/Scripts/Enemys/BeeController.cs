@@ -6,31 +6,14 @@ public class BeeController : MonoBehaviour
 {
     [SerializeField] private float timingShoot;
     [SerializeField] private Transform shootPoint;
-        [SerializeField] private GameObject bulletShootPrefab;
-    [SerializeField] private List<Transform> positions;
+    [SerializeField] private GameObject bulletShootPrefab;
 
-    private int _index = 0;
     private bool _isShoot;
 
-    private PoolGeneric _poolBullet = new PoolGeneric();
+    private readonly PoolGeneric _poolBullet = new PoolGeneric();
     
     private void Update()
     {
-        var position = transform.position;
-        position = Vector2.MoveTowards(position, positions[_index].position, 2 * Time.deltaTime);
-        transform.position = position;
-
-        var distance = Vector2.Distance(position, positions[_index].position);
-        
-        if (distance < 1f)
-        {
-            _index++;
-            if (_index >= positions.Count)
-            {
-                _index = 0;
-            }
-        }
-
         var hit = Physics2D.Raycast(transform.position, Vector2.down, 20f);
         if (hit.transform.gameObject.CompareTag("Player"))
         {

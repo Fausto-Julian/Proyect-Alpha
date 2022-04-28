@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 6488542493941127928}
   - component: {fileID: 6488542493941127929}
   - component: {fileID: 6488542493941127814}
+  - component: {fileID: 380157822352450235}
   - component: {fileID: 6488542493941127813}
   m_Layer: 0
   m_Name: AngryPing
@@ -199,6 +200,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLife: 100
   animator: {fileID: 6488542493713663542}
+--- !u!114 &380157822352450235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6488542493941127930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7740c2d6a4342a3882b60ace55cbc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  positions: []
+  isFlipSpriteX: 1
+  spriteRenderer: {fileID: 6488542493713663541}
 --- !u!114 &6488542493941127813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,9 +228,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f4285ccc1c48d0a5af78c5b69efd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  positions: []
-  spriteRenderer: {fileID: 6488542493713663541}
 --- !u!1 &6488542493993039901
 GameObject:
   m_ObjectHideFlags: 0

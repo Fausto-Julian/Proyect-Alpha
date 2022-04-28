@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 130700736070372806}
+  - component: {fileID: 7249807437028223143}
   - component: {fileID: 130700736070372857}
   m_Layer: 0
   m_Name: BeeEnemy
@@ -33,6 +34,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7249807437028223143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130700736070372807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7740c2d6a4342a3882b60ace55cbc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  isFlipSpriteX: 0
+  positions: []
+  spriteRenderer: {fileID: 0}
 --- !u!114 &130700736070372857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,7 +65,6 @@ MonoBehaviour:
   timingShoot: 1
   shootPoint: {fileID: 130700737495905157}
   bulletShootPrefab: {fileID: 5782056008139022710, guid: 3a52d9c5d1b9fb847ac4794667434799, type: 3}
-  positions: []
 --- !u!1 &130700736444460282
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,6 +76,7 @@ GameObject:
   - component: {fileID: 130700736444460285}
   - component: {fileID: 130700736444460287}
   - component: {fileID: 130700736444460284}
+  - component: {fileID: 895523682154164057}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -151,6 +168,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &895523682154164057
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130700736444460282}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008062452, y: -0.006718874}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.0588236, y: 1}
+    newSize: {x: 0.36, y: 0.34}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7040716, y: 0.78768635}
+  m_EdgeRadius: 0
 --- !u!1 &130700737495905154
 GameObject:
   m_ObjectHideFlags: 0

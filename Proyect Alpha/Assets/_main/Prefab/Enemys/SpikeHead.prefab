@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4713428002127467870}
   - component: {fileID: 4713428002127467869}
+  - component: {fileID: 4893874365846175502}
   - component: {fileID: 4713428002127467868}
   m_Layer: 0
   m_Name: SpikeHead
@@ -59,6 +60,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.80790293, y: 0.7886932}
   m_EdgeRadius: 0
+--- !u!114 &4893874365846175502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4713428002127467843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7740c2d6a4342a3882b60ace55cbc22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  isFlipSpriteX: 0
+  positions: []
+  spriteRenderer: {fileID: 0}
 --- !u!114 &4713428002127467868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,8 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5321b7d6281d4604ea65906035c20250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  positions: []
 --- !u!1 &4713428002229801529
 GameObject:
   m_ObjectHideFlags: 0

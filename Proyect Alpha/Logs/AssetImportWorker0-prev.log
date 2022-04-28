@@ -15,11 +15,11 @@ C:/Games Private/Proyect Alpha/Proyect Alpha
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57147
+51930
 Successfully changed project path to: C:/Games Private/Proyect Alpha/Proyect Alpha
 C:/Games Private/Proyect Alpha/Proyect Alpha
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 62.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 60.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.33f1 (915a7af8b0d5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -35,37 +35,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001498 seconds.
+Registered in 0.001577 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 59.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 59.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.643 seconds
+- Completed reload, in  0.669 seconds
 Domain Reload Profiling:
-	ReloadAssembly (643ms)
+	ReloadAssembly (669ms)
 		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (500ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (530ms)
+			LoadAssemblies (61ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (158ms)
+			SetupTypeCache (174ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (196ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (203ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (59ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (88ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (93ms)
 				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -73,35 +73,35 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003122 seconds.
+Registered in 0.003627 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Games Private\Proyect Alpha\Proyect Alpha\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.30 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 61.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.267 seconds
+- Completed reload, in  1.251 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1268ms)
-		BeginReloadAssembly (162ms)
+	ReloadAssembly (1252ms)
+		BeginReloadAssembly (161ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1032ms)
-			LoadAssemblies (105ms)
+		EndReloadAssembly (1024ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (316ms)
+			SetupTypeCache (322ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (415ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (408ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (60ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (231ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (229ms)
 				ProcessInitializeOnLoadMethodAttributes (19ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
@@ -111,14 +111,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2362 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 102.6 MB.
 System memory in use after: 102.7 MB.
 
 Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2794.
-Total: 3.322600 ms (FindLiveObjects: 0.202400 ms CreateObjectMapping: 0.063300 ms MarkObjects: 2.911100 ms  DeleteObjects: 0.144800 ms)
+Total: 3.729800 ms (FindLiveObjects: 0.197100 ms CreateObjectMapping: 0.065800 ms MarkObjects: 3.300200 ms  DeleteObjects: 0.165800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,19 +132,413 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/_main/Prefab/Enemys/AngryPing.prefab
-  artifactKey: Guid(10544371658477546a7109aca347bed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_main/Prefab/Enemys/AngryPing.prefab using Guid(10544371658477546a7109aca347bed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53dd69dd4e89527eeab11fe721799cbb') in 0.110576 seconds 
+  path: Assets/White Black GUI/White and Black GUI.unity
+  artifactKey: Guid(967aaf40a55c90c4494993471397668f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/White and Black GUI.unity using Guid(967aaf40a55c90c4494993471397668f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3c09b623fbc0927a1bb16ce07ad30f') in 0.009808 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.022518 seconds.
-  path: Assets/_main/Prefab/Enemys/BeeBullet.prefab
-  artifactKey: Guid(3a52d9c5d1b9fb847ac4794667434799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_main/Prefab/Enemys/BeeBullet.prefab using Guid(3a52d9c5d1b9fb847ac4794667434799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a45fe4014c20879965fc913275f0a1') in 0.014282 seconds 
+  Time since last request: 26.064217 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_down.png
+  artifactKey: Guid(77f0dee2e0d3498428087e4c8ed1ccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_down.png using Guid(77f0dee2e0d3498428087e4c8ed1ccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651c2be1741307b79a9d62845268a12f') in 0.127551 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.131863 seconds.
-  path: Assets/_main/Prefab/Enemys/SpikeHead.prefab
-  artifactKey: Guid(e556cb3474a5c314b8baf36a26d7865d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_main/Prefab/Enemys/SpikeHead.prefab using Guid(e556cb3474a5c314b8baf36a26d7865d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8b10d38cb1a5e5d6091af8246bfcd9') in 0.013342 seconds 
+  Time since last request: 0.000157 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_options.png
+  artifactKey: Guid(02ba8457eafd82e45a164080bfa1a1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_options.png using Guid(02ba8457eafd82e45a164080bfa1a1ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '853000ca56768a081b9dd32377dd5f9a') in 0.021953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_restart.png
+  artifactKey: Guid(57a8a0ee9aab0024a82f39678775497f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_restart.png using Guid(57a8a0ee9aab0024a82f39678775497f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90bfbb3f432ff2c6ecc4f71adfba5932') in 0.020309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_close.png
+  artifactKey: Guid(3a40643d683ae324883c06e8dcf1bb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_close.png using Guid(3a40643d683ae324883c06e8dcf1bb2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8593588c50186ede22db5a7e7d09a36') in 0.021020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/White Black GUI/Black Icons/darkSound_on.png
+  artifactKey: Guid(6a6b2cf0d0c91984da9209037b165c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkSound_on.png using Guid(6a6b2cf0d0c91984da9209037b165c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2883ec442401ca5af9564561fe77878') in 0.021095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_achievement.png
+  artifactKey: Guid(291d1b4771b846240b3c56eb9edb8330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_achievement.png using Guid(291d1b4771b846240b3c56eb9edb8330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef95a6b9dfea9dcd4fe7026cac427f4') in 0.020367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_minus.png
+  artifactKey: Guid(cd14ce22054c45142adeeb2dd696b33f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_minus.png using Guid(cd14ce22054c45142adeeb2dd696b33f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a81939a84af9dd6b114ce18ab9d96da') in 0.020375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_plus.png
+  artifactKey: Guid(9887ff0090d709847b9e1b6e210e40d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_plus.png using Guid(9887ff0090d709847b9e1b6e210e40d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de017a77263977f19a044ecd61a14e4') in 0.021885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_world.png
+  artifactKey: Guid(98b9b4906294794479bb57079c8a36a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_world.png using Guid(98b9b4906294794479bb57079c8a36a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e702ebc8a539edbaf3f942beedf79a') in 0.019891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_store.png
+  artifactKey: Guid(8d377fccf121d9842a1c47212f09e803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_store.png using Guid(8d377fccf121d9842a1c47212f09e803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a270c37f89ad51e6e1d12b6887fe3ef') in 0.020137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_up.png
+  artifactKey: Guid(79a156bf615b9c046b2dce48cf050afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_up.png using Guid(79a156bf615b9c046b2dce48cf050afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2e6fd2590133e1e9e61a99ee13be31') in 0.020045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_star.png
+  artifactKey: Guid(56b4c53edc3d3b64186f274a6f8537e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_star.png using Guid(56b4c53edc3d3b64186f274a6f8537e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764a48dbd2f9797d2b087350bcd9eaf0') in 0.020428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_scope.png
+  artifactKey: Guid(9fadeaa8036a07240aca5fbc669076d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_scope.png using Guid(9fadeaa8036a07240aca5fbc669076d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6244eb50c4f29de4b2b026667fbf5a') in 0.020531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000133 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_compass.png
+  artifactKey: Guid(f02b055dcf85ce14284dfda49ecb02f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_compass.png using Guid(f02b055dcf85ce14284dfda49ecb02f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a4e08726758ec376e939d00f39ea29') in 0.021101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_radioactive.png
+  artifactKey: Guid(9a4b6ff787d58b74da9bcbf871275316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_radioactive.png using Guid(9a4b6ff787d58b74da9bcbf871275316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d2891856eca05b5012bcb71f775cd9') in 0.020566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/White Black GUI/Black Icons/darkFacebook_01.png
+  artifactKey: Guid(d841f05f50c0cc849b0eb39efca97d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkFacebook_01.png using Guid(d841f05f50c0cc849b0eb39efca97d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a81e3ad9a66d4d92938823690dbd42') in 0.020937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_left.png
+  artifactKey: Guid(1041c0652dd226e4382c504cf6caefcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_left.png using Guid(1041c0652dd226e4382c504cf6caefcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1bf310f00319117a4be69d05a6b5e1') in 0.020655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_left2.png
+  artifactKey: Guid(4d8b19e0a90fb7b45ac5d0fae7dc1580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_left2.png using Guid(4d8b19e0a90fb7b45ac5d0fae7dc1580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a77779ce0cca105112fcf070dad627') in 0.020200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/White Black GUI/Black Icons/darkNumber_1.png
+  artifactKey: Guid(544049555d16f7447afb11148fe1ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkNumber_1.png using Guid(544049555d16f7447afb11148fe1ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c8e2fc2514e4580816c31482f9e64e') in 0.020123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_list.png
+  artifactKey: Guid(3dcbde2974b6cd041b88383a96c6784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_list.png using Guid(3dcbde2974b6cd041b88383a96c6784a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747d1bd6fbacbf6cc8af77e7ae34607f') in 0.023135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_death.png
+  artifactKey: Guid(7991c6d13e7d7bb44a33f20f6cbc3480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_death.png using Guid(7991c6d13e7d7bb44a33f20f6cbc3480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9caace8a93303bbf066584f2786a2008') in 0.021986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/White Black GUI/Black Icons/darkLetter_y.png
+  artifactKey: Guid(ce3309ad02449d44f89ed94f42364ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkLetter_y.png using Guid(ce3309ad02449d44f89ed94f42364ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900f36c00b62aac023ba547d31ddaf8a') in 0.020130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_heart.png
+  artifactKey: Guid(444017026c743e64d8f4bc38f456e28e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_heart.png using Guid(444017026c743e64d8f4bc38f456e28e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0c70e40b0f5d3bd2a485775c40cf63') in 0.021283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_target.png
+  artifactKey: Guid(3061de3d003373e4fb671d939a18ed11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_target.png using Guid(3061de3d003373e4fb671d939a18ed11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1506a0a565c805aff883db9ff5c24b') in 0.021779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_info.png
+  artifactKey: Guid(fede790c1e30ebf49b72240ee2fc09fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_info.png using Guid(fede790c1e30ebf49b72240ee2fc09fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c8b43b1d8145251ce1a76d1ef54dc5') in 0.020470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_right.png
+  artifactKey: Guid(38895bdf640765b44b0a7964529aefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_right.png using Guid(38895bdf640765b44b0a7964529aefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67cdc34f4291451891d628cdc2e7b62c') in 0.019983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/White Black GUI/Black Icons/darkSound_off.png
+  artifactKey: Guid(6687038e549c24c4eb97b760700edb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkSound_off.png using Guid(6687038e549c24c4eb97b760700edb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6941cd1ba50ccbdc44a737c1cf850c0') in 0.021312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_done.png
+  artifactKey: Guid(89b19ad01b389fb4590e7c45cd00db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_done.png using Guid(89b19ad01b389fb4590e7c45cd00db76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c9b43dbc2cbc1a7e1488294b240b72') in 0.021108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_down2.png
+  artifactKey: Guid(883bfc518b133f64d94d07d7c78e274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_down2.png using Guid(883bfc518b133f64d94d07d7c78e274f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3130c1466677e51d10f77882bb8fc5a3') in 0.019699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/White Black GUI/Black Icons/darkLetter_x.png
+  artifactKey: Guid(f588a89472ad48d48828dfd95b6b603c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkLetter_x.png using Guid(f588a89472ad48d48828dfd95b6b603c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2008166f949c629de8f4c0aa5898f7') in 0.020469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_coin.png
+  artifactKey: Guid(945c3037a8eff484585707630bf7c3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_coin.png using Guid(945c3037a8eff484585707630bf7c3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca5a87a74c9df6c6e3b4b9c02603517') in 0.021492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_play.png
+  artifactKey: Guid(92dddb63c7d1e1d41af2c95488f95af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_play.png using Guid(92dddb63c7d1e1d41af2c95488f95af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c2f2a1b3e6e488e029a92973dbc2fe') in 0.020241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/White Black GUI/Black Icons/darkLetter_b.png
+  artifactKey: Guid(1938e2c6cbbc45249b58b80f3ad09e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkLetter_b.png using Guid(1938e2c6cbbc45249b58b80f3ad09e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf50dfbd6c4a9909c04c0a0e5e54b51c') in 0.020504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_help.png
+  artifactKey: Guid(c803fc75c85bf0a47a6b303cd8796d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_help.png using Guid(c803fc75c85bf0a47a6b303cd8796d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8495e35dc4fed2cbf0bd9fa1ddfcb6f') in 0.019859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/White Black GUI/Black Icons/darkNumber_2.png
+  artifactKey: Guid(61d41c84dc8e75a40b355e3bdc62f7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkNumber_2.png using Guid(61d41c84dc8e75a40b355e3bdc62f7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4dd98a9e5ea55929433bbd2694e6ab') in 0.020094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/White Black GUI/Black Icons/darkTwitter_02.png
+  artifactKey: Guid(6118277717e606940b32030882b9f0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkTwitter_02.png using Guid(6118277717e606940b32030882b9f0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c670e490f5b0b1ca415f7d22f5343373') in 0.020816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/White Black GUI/Black Icons/darkTwitter_01.png
+  artifactKey: Guid(cc0b5899d7c683e4593e38f19ff7482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkTwitter_01.png using Guid(cc0b5899d7c683e4593e38f19ff7482c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14b8cf219c96781057da53e9ea35634a') in 0.020968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/White Black GUI/Black Icons/darkLetter_a.png
+  artifactKey: Guid(069d75094bb0655449eeb978448f8cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkLetter_a.png using Guid(069d75094bb0655449eeb978448f8cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '990393dec40cb2ab4dc5ae9ae5769689') in 0.020912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_pause.png
+  artifactKey: Guid(58980f40e9756404cbf506e74fc625a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_pause.png using Guid(58980f40e9756404cbf506e74fc625a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca220e35b7ca8645586ebd455a6a51d') in 0.021181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_right2.png
+  artifactKey: Guid(d6278a34674b6cb468a063e6a1c7fc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_right2.png using Guid(d6278a34674b6cb468a063e6a1c7fc9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ed56b7d23ae9cbd28d02efecd2224b') in 0.019813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/White Black GUI/Black Icons/darkIcon_worldSelect.png
+  artifactKey: Guid(01160a24b20b35343851f26ae103f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkIcon_worldSelect.png using Guid(01160a24b20b35343851f26ae103f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86c0ea089d1c7dbf0748e817c75f08d') in 0.019778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/White Black GUI/Black Icons/darkArrow_up2.png
+  artifactKey: Guid(ccbdf16aee4ce1040971ed6fd7219809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/White Black GUI/Black Icons/darkArrow_up2.png using Guid(ccbdf16aee4ce1040971ed6fd7219809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87f4893190690733c114ded895edb8a') in 0.019575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.227786 seconds.
+  path: Assets/_main/Scripts/MovePlatform.cs
+  artifactKey: Guid(599c713117a1eb649a50133a8217dd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_main/Scripts/MovePlatform.cs using Guid(599c713117a1eb649a50133a8217dd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bed3e1d3683b65ded965353de9315e3') in 0.012492 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003640 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Games Private\Proyect Alpha\Proyect Alpha\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.272 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1272ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1055ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (351ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (376ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2359 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.5 MB.
+System memory in use after: 105.6 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2804.
+Total: 3.686600 ms (FindLiveObjects: 0.247800 ms CreateObjectMapping: 0.081400 ms MarkObjects: 3.218400 ms  DeleteObjects: 0.137900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 148.325742 seconds.
+  path: Assets/_main/Scripts/MovePlatform.cs
+  artifactKey: Guid(599c713117a1eb649a50133a8217dd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_main/Scripts/MovePlatform.cs using Guid(599c713117a1eb649a50133a8217dd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca328372e1014861e8e4d001d2d2802f') in 0.009876 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005131 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Games Private\Proyect Alpha\Proyect Alpha\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.937 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1938ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1658ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (577ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (555ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (170ms)
+				ProcessInitializeOnLoadAttributes (348ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2359 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 105.6 MB.
+System memory in use after: 105.6 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2807.
+Total: 5.044400 ms (FindLiveObjects: 0.350700 ms CreateObjectMapping: 0.099900 ms MarkObjects: 3.881400 ms  DeleteObjects: 0.710500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 24.641321 seconds.
+  path: Assets/_main/Scripts/HealthController.cs
+  artifactKey: Guid(9a7dec04eeb547f3b0eb3cb400991dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_main/Scripts/HealthController.cs using Guid(9a7dec04eeb547f3b0eb3cb400991dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1730e8c37ffd7f3aad4b8e2fa1e72eb8') in 0.010710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 111.592821 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Traps/Spiked Ball
+  artifactKey: Guid(34f66a7c3ba2abd498670acc3cecc736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Traps/Spiked Ball using Guid(34f66a7c3ba2abd498670acc3cecc736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a5d806b6af2a0d13dc03c8feb6dc5f') in 0.006559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.411903 seconds.
+  path: Assets/Pixel Adventure 1/Assets/Traps/Trampoline
+  artifactKey: Guid(a434aef4a8c764c41a2fd855eeb579df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pixel Adventure 1/Assets/Traps/Trampoline using Guid(a434aef4a8c764c41a2fd855eeb579df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd56f04ff564adfff4a9cbaef08f0ab4') in 0.008883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 226.601833 seconds.
+  path: Assets/_main/Prefab/Platform Move.prefab
+  artifactKey: Guid(3b8d80f4d91104b40b5376c8288fff78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_main/Prefab/Platform Move.prefab using Guid(3b8d80f4d91104b40b5376c8288fff78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5cbf6f19a7614c339191a47c656ddd5') in 0.080529 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
