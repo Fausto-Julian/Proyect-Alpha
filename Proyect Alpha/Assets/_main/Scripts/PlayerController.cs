@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using _main.Scripts;
 using UnityEngine;
 
@@ -9,7 +7,9 @@ public class PlayerController : MonoBehaviour
     [Header("Stats")] 
     
     [SerializeField] private float speed;
-    [SerializeField] private float jumpForce;
+    [SerializeField] private float jumpSpeed;
+    [SerializeField] private float doubleJumpForce;
+    [SerializeField] private bool betterJump;
     
     [Space]
     
@@ -21,12 +21,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D _body;
     private bool _isGround;
-    private float _move;
     private bool _isHit;
-
-    private bool _isLeft = false;
-    private bool _isRight = false;
-    private bool _isUp = false;
+    private bool _canJump;
 
     private void Awake()
     {
@@ -35,100 +31,75 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _move = 0;
-        animator.SetBool("isRun", false);
-        if (_isRight)
+        _isGround = Physics2D.OverlapCircle(checkGround.position, 0.2f, whatIsGround);
+        
+        if (Input.GetKey(KeyCode.Space) && _isGround && !_isHit)
         {
-            _move += 1;
-            animator.SetBool("isRun", true);
-            spriteRenderer.flipX = false;
+            animator.SetBool("isJump", true);
+            _body.velocity += new Vector2(0f, jumpSpeed);
+            _body.velocity = new Vector2(_body.velocity.x, Mathf.Clamp(_body.velocity.y, 0f, 8f));
+            _canJump = true;
         }
         
-        if(_isLeft)
+        if (Input.GetKeyDown(KeyCode.Space) && _canJump && !_isGround)
         {
-            _move -= 1;
+            animator.SetBool("isDoubleJump", true);
+            animator.SetBool("isJump", false);
+            animator.SetBool("isFalling", false);
+            _body.velocity = new Vector2(_body.velocity.x, doubleJumpForce);
+            _canJump = false;
+        }
+        
+        if (betterJump)
+        {
+            if (_body.velocity.y < 0)
+            {
+                _body.velocity += Vector2.up * Physics.gravity.y * 0.5f * Time.deltaTime;
+            }
+
+            if (_body.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+            {
+                _body.velocity += Vector2.up * Physics.gravity.y * 1 * Time.deltaTime;
+            }
+        }
+        
+        if (_body.velocity.x > 0.5 || _body.velocity.x < -0.5)
+        {
             animator.SetBool("isRun", true);
+        }
+
+        if (_isGround)
+        {
+            animator.SetBool("isFalling", false);
+        }
+        
+        if (_body.velocity.y < -1)
+        {
+            animator.SetBool("isJump", false);
+            animator.SetBool("isDoubleJump", false);
+            animator.SetBool("isFalling", true);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            _body.velocity = new Vector2(-speed, _body.velocity.y);
             spriteRenderer.flipX = true;
         }
-
-        #region eliminar al buildear
-        
-        _move = Input.GetAxisRaw("Horizontal");
-
-        if (_move < 0)
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            animator.SetBool("isRun", true);
-            spriteRenderer.flipX = true; 
-        }
-
-        if (_move > 0)
-        {
-            animator.SetBool("isRun", true);
+            _body.velocity = new Vector2(speed, _body.velocity.y);
             spriteRenderer.flipX = false; 
         }
-        
-        #endregion
-        
-        
-        _move *= speed * Time.deltaTime;
-        if (!_isGround)
+        else
         {
-            _move *= 0.75f;
-        }
-
-        if (!_isHit)
-        {
-            transform.position += new Vector3(_move, 0f);
-        }
-
-        _isGround = Physics2D.OverlapCircle(checkGround.position, 0.2f, whatIsGround);
-
-        animator.SetBool("isGrounded", _isGround);
-        
-        if (_isUp && _isGround && !_isHit)
-        {
-            _isUp = false;
-            _body.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            animator.SetBool("isJump", true);
-            Invoke(nameof(DisableAnimationJump), 0.5f);
+            _body.velocity = new Vector2(0f, _body.velocity.y);
+            animator.SetBool("isRun", false);
         }
     }
 
-    private void DisableAnimationJump()
-    {
-        animator.SetBool("isJump", false); 
-    }
-
-    public void DownButtonLeftHandler()
-    {
-        _isLeft = true;
-    }
-    
-    public void UpButtonLeftHandler()
-    {
-        _isLeft = false;
-    }
-    
-    public void DownButtonRightHandler()
-    {
-        _isRight = true;
-    }
-    
-    public void UpButtonRightHandler()
-    {
-        _isRight = false;
-    }
-    
-    public void DownButtonUpHandler()
-    {
-        _isUp = true;
-    }
-    
-    public void UpButtonUpHandler()
-    {
-        _isUp = false;
-    }
-    
     public void ActiveHitAnim()
     {
         animator.SetBool("isHit", true);
@@ -162,10 +133,9 @@ public class PlayerController : MonoBehaviour
         if (col.gameObject.CompareTag("HeadEnemy"))
         {
             _body.velocity = new Vector2(_body.velocity.x, 0f);
-            _body.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            _body.velocity = new Vector2(_body.velocity.x, jumpSpeed);
             col.GetComponentInParent<HealthController>().GetDamage(50);
             animator.SetBool("isJump", true);
-            Invoke(nameof(DisableAnimationJump), 0.5f);
         }
     }
 }

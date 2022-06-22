@@ -491,6 +491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana
       objectReference: {fileID: 0}
+    - target: {fileID: 4231626150741315784, guid: 07609bdc7a2f2e04c8b0303f9773d71f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07609bdc7a2f2e04c8b0303f9773d71f, type: 3}
 --- !u!1 &519420028
@@ -605,7 +609,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.08, y: 1.0000002, z: -10}
+  m_LocalPosition: {x: -6.08, y: 0.62000024, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5360,7 +5364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717936852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.08, y: 1.0000002, z: -10}
+  m_LocalPosition: {x: -6.08, y: 0.62000024, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1495831032}
@@ -14647,7 +14651,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1103737547}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2f305193836e982408d9b1e4c6b2c377, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -46597,6 +46601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMaxLife: 3
+  maxFruit: 0
 --- !u!4 &1839255839
 Transform:
   m_ObjectHideFlags: 0
@@ -46618,6 +46623,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8159731321509839863, guid: ce97657bc48cf694f8720bfa021afe4d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8159731322940305276, guid: ce97657bc48cf694f8720bfa021afe4d, type: 3}
       propertyPath: m_Name
       value: Cherrie
@@ -46683,6 +46692,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9147382845226309564, guid: 95bcdc1ed9a08f84695dd5f1ff108d38, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9147382846743728388, guid: 95bcdc1ed9a08f84695dd5f1ff108d38, type: 3}
       propertyPath: m_Name
       value: Apple
@@ -47040,6 +47053,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8893805459970516869, guid: f9e345d6c6be88a439eb04c74bacd264, type: 3}
+      propertyPath: jumpSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893805459970516869, guid: f9e345d6c6be88a439eb04c74bacd264, type: 3}
+      propertyPath: doubleJumpForce
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8893805459970516870, guid: f9e345d6c6be88a439eb04c74bacd264, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -47050,7 +47071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8893805459970516870, guid: f9e345d6c6be88a439eb04c74bacd264, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.38
       objectReference: {fileID: 0}
     - target: {fileID: 8893805459970516870, guid: f9e345d6c6be88a439eb04c74bacd264, type: 3}
       propertyPath: m_LocalPosition.z
