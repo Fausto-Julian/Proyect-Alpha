@@ -29,13 +29,13 @@ public class GameManager : MonoBehaviour
 
     public void RestLife()
     {
+        GameObject.FindGameObjectWithTag("Player").transform.position = GameObject.FindGameObjectWithTag("SpawnPointPlayer").transform.position;
         _playerLife--;
         if (_playerLife <= 0)
         {
             SceneManager.LoadScene(0);
             _playerLife = playerMaxLife;
         }
-        GameObject.FindGameObjectWithTag("Player").transform.position = GameObject.FindGameObjectWithTag("SpawnPointPlayer").transform.position;
     }
 
     public void AddFruit()
@@ -63,7 +63,12 @@ public class GameManager : MonoBehaviour
             star = 0;
         }
 
-        PlayerPrefs.SetInt("LevelScene", SceneManager.GetActiveScene().buildIndex + 1);
+        var levelScene = PlayerPrefs.GetInt("LevelScene", 7);
+        if (SceneManager.GetActiveScene().buildIndex + 1 > levelScene)
+        {
+            PlayerPrefs.SetInt("LevelScene", SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        
         PlayerPrefs.SetInt($"LevelStars{SceneManager.GetActiveScene().buildIndex}", star);
         SceneManager.LoadScene(0);
     }

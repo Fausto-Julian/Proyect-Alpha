@@ -12,7 +12,7 @@ public class ButtonLevel : MonoBehaviour
 
     private void Start()
     {
-        var scene = PlayerPrefs.GetInt("LevelScene", 1);
+        var scene = PlayerPrefs.GetInt("LevelScene", 7);
 
         if (scene < indexSceneLevel)
         {

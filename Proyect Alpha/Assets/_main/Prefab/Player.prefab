@@ -74,7 +74,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  jumpForce: 2
+  jumpSpeed: 2
+  doubleJumpForce: 6
   betterJump: 1
   spriteRenderer: {fileID: 8893805460019921997}
   animator: {fileID: 8893805460019921996}

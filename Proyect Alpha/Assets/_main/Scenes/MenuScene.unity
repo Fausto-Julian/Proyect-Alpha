@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff52efa274a2334ab32ac1fd2058f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexSceneLevel: 1
+  indexSceneLevel: 3
   star1: {fileID: 452449587}
   star2: {fileID: 2119361472}
   star3: {fileID: 1496076439}
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff52efa274a2334ab32ac1fd2058f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexSceneLevel: 1
+  indexSceneLevel: 4
   star1: {fileID: 611931606}
   star2: {fileID: 744281847}
   star3: {fileID: 1047056118}
@@ -1372,7 +1372,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 628406644}
   m_OnClick:
     m_PersistentCalls:
@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff52efa274a2334ab32ac1fd2058f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexSceneLevel: 1
+  indexSceneLevel: 2
   star1: {fileID: 136505236}
   star2: {fileID: 925670074}
   star3: {fileID: 1125784655}
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.1
+  m_fontSize: 67.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2483,7 +2483,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 817482869}
   m_OnClick:
     m_PersistentCalls:
@@ -3352,7 +3352,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.25
+  m_fontSize: 67.55
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4091,7 +4091,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1426719204}
   m_OnClick:
     m_PersistentCalls:
@@ -5976,7 +5976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff52efa274a2334ab32ac1fd2058f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexSceneLevel: 1
+  indexSceneLevel: 5
   star1: {fileID: 446025405}
   star2: {fileID: 1840748712}
   star3: {fileID: 281171555}
@@ -6195,7 +6195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff52efa274a2334ab32ac1fd2058f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexSceneLevel: 1
+  indexSceneLevel: 6
   star1: {fileID: 901916093}
   star2: {fileID: 578529535}
   star3: {fileID: 1305060252}
@@ -6423,7 +6423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff52efa274a2334ab32ac1fd2058f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexSceneLevel: 1
+  indexSceneLevel: 7
   star1: {fileID: 815878202}
   star2: {fileID: 757527349}
   star3: {fileID: 1396270238}
