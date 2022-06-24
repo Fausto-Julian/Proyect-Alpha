@@ -132,8 +132,7 @@ public class PlayerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("HeadEnemy"))
         {
-            _body.velocity = new Vector2(_body.velocity.x, 0f);
-            _body.velocity = new Vector2(_body.velocity.x, jumpSpeed);
+            _body.velocity = new Vector2(_body.velocity.x, doubleJumpForce);
             col.GetComponentInParent<HealthController>().GetDamage(50);
             animator.SetBool("isJump", true);
         }
