@@ -4,7 +4,9 @@ using UnityEngine;
 public class BeeController : MonoBehaviour
 {
     [SerializeField] private float timingShoot;
+    [SerializeField] private float shootDistance;
     [SerializeField] private Transform shootPoint;
+    [SerializeField] private Transform player;
     [SerializeField] private GameObject bulletShootPrefab;
 
     private bool _isShoot;
@@ -13,12 +15,13 @@ public class BeeController : MonoBehaviour
     
     private void Update()
     {
-        var hit = Physics2D.Raycast(transform.position, Vector2.down, 20f);
+        var hit = Physics2D.Raycast(transform.position, Vector2.down, shootDistance);
         if (hit.transform.gameObject.CompareTag("Player"))
         {
             if (!_isShoot)
             {
                 StartCoroutine(nameof(Shoot));
+                Debug.Log("SHOT");
             }
             
         }
