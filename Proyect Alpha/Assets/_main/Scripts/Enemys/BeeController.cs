@@ -20,6 +20,7 @@ public class BeeController : MonoBehaviour
         Vector3 playerDirection = (player.transform.position - transform.position).normalized;
 
         var hit = Physics2D.Raycast(transform.position, playerDirection, shootDistance);
+        
         if (hit.transform.gameObject.CompareTag("Player"))
         {
             Debug.Log("tag comparada");
