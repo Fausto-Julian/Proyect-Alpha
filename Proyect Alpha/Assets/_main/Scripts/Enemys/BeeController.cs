@@ -6,7 +6,6 @@ public class BeeController : MonoBehaviour
     [SerializeField] private float timingShoot;
     [SerializeField] private float shootDistance;
     [SerializeField] private Transform shootPoint;
-    [SerializeField] private Transform player;
     [SerializeField] private GameObject bulletShootPrefab;
 
     private bool _isShoot;

@@ -1,14 +1,18 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [SerializeField] private int playerMaxLife;
+    [SerializeField] private int playerMaxLife = 3;
     [SerializeField] private int maxFruit;
     private int _playerLife;
     private int _playerFruit;
+
+    public event Action<int> OnChangeLife;
+    public event Action<int> OnChangeFruits;
     
     private void Awake()
     {
@@ -36,11 +40,13 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(0);
             _playerLife = playerMaxLife;
         }
+        OnChangeLife.Invoke(_playerLife);
     }
 
     public void AddFruit()
     {
         _playerFruit++;
+        OnChangeFruits.Invoke(_playerFruit);
     }
 
     public void WinPlayer()
@@ -63,7 +69,7 @@ public class GameManager : MonoBehaviour
             star = 0;
         }
 
-        var levelScene = PlayerPrefs.GetInt("LevelScene", 7);
+        var levelScene = PlayerPrefs.GetInt("LevelScene", 10);
         if (SceneManager.GetActiveScene().buildIndex + 1 > levelScene)
         {
             PlayerPrefs.SetInt("LevelScene", SceneManager.GetActiveScene().buildIndex + 1);

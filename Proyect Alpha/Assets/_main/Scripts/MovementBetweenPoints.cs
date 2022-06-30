@@ -21,7 +21,7 @@ namespace _main.Scripts
 
             var distance = Vector2.Distance(position, positions[_index].position);
         
-            if (distance < 0.2f)
+            if (distance < 0.1f)
             {
                 _index++;
                 if (_index >= positions.Count)
