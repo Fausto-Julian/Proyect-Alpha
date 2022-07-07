@@ -40,7 +40,7 @@ public class BulletController : MonoBehaviour
          GameManager.Instance.RestLife();
          OnDesactivate?.Invoke();
       }
-      else
+      else if(!col.transform.gameObject.CompareTag(gameObject.tag))
       {
          OnDesactivate?.Invoke();
       }

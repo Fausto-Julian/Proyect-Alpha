@@ -10,29 +10,24 @@ public class BeeController : MonoBehaviour
     [SerializeField] private GameObject player;
 
     private bool _isShoot = false;
-    
+
 
     private readonly PoolGeneric _poolBullet = new PoolGeneric();
 
-    
+
 
     private void Update()
     {
-        Vector3 playerDirection = (player.transform.position - transform.position).normalized;
-
-        var hit = Physics2D.Raycast(transform.position, Vector2.down, shootDistance);
-
-        Debug.Log(hit.collider.gameObject.tag);
-
-        if (hit.transform.gameObject.CompareTag("Player"))
+        var hit = Physics2D.Raycast(shootPoint.position, Vector2.down, shootDistance);
+        if (hit)
         {
-            Debug.Log("tag comparada");
-            if (!_isShoot)
+            if (hit.transform.gameObject.CompareTag("Player"))
             {
-                StartCoroutine(nameof(Shoot));
-                Debug.Log("SHOT");
+                if (!_isShoot)
+                {
+                    StartCoroutine(nameof(Shoot));
+                }
             }
-            
         }
     }
 
@@ -43,11 +38,11 @@ public class BeeController : MonoBehaviour
         yield return new WaitForSeconds(timingShoot);
         _isShoot = false;
     }
-    
+
     private void CreateBullet()
     {
         var bullet = _poolBullet.GetorCreate();
-        
+
         if (bullet == null)
         {
             bullet = Instantiate(bulletShootPrefab);
@@ -65,10 +60,5 @@ public class BeeController : MonoBehaviour
         }
 
         bullet.transform.position = shootPoint.position;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Debug.DrawRay(transform.position, (player.transform.position - transform.position).normalized * shootDistance, Color.red);
     }
 }
