@@ -16,7 +16,7 @@ public class MetaWin : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             _animator.SetBool("Win", true);
-            Invoke(nameof(Win), 5f);
+            Invoke(nameof(Win), 2.5f);
         }
     }
 

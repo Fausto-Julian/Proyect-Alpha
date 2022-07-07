@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _isGround = Physics2D.OverlapCircle(checkGround.position, 0.2f, whatIsGround);
+        _isGround = Physics2D.OverlapCircle(checkGround.position, 0.15f, whatIsGround);
         
         if (Input.GetKey(KeyCode.Space) && _isGround && !_isHit)
         {
