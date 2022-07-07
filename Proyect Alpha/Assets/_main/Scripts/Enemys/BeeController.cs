@@ -10,6 +10,7 @@ public class BeeController : MonoBehaviour
     [SerializeField] private GameObject player;
 
     private bool _isShoot = false;
+    
 
     private readonly PoolGeneric _poolBullet = new PoolGeneric();
 
@@ -19,8 +20,10 @@ public class BeeController : MonoBehaviour
     {
         Vector3 playerDirection = (player.transform.position - transform.position).normalized;
 
-        var hit = Physics2D.Raycast(transform.position, playerDirection, shootDistance);
-        
+        var hit = Physics2D.Raycast(transform.position, Vector2.down, shootDistance);
+
+        Debug.Log(hit.collider.gameObject.tag);
+
         if (hit.transform.gameObject.CompareTag("Player"))
         {
             Debug.Log("tag comparada");
@@ -66,6 +69,6 @@ public class BeeController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Debug.DrawRay(transform.position, (player.transform.position - transform.position).normalized, Color.red);
+        Debug.DrawRay(transform.position, (player.transform.position - transform.position).normalized * shootDistance, Color.red);
     }
 }
