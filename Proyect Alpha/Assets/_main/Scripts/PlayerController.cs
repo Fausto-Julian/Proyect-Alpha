@@ -1,4 +1,3 @@
-using System;
 using _main.Scripts;
 using UnityEngine;
 
