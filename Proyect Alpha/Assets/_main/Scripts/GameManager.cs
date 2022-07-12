@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
             star = 0;
         }
 
-        var levelScene = PlayerPrefs.GetInt("LevelScene", 10);
+        var levelScene = PlayerPrefs.GetInt("LevelScene", 11);
         if (SceneManager.GetActiveScene().buildIndex + 1 > levelScene)
         {
             PlayerPrefs.SetInt("LevelScene", SceneManager.GetActiveScene().buildIndex + 1);
